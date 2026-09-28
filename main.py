@@ -1,5 +1,5 @@
 import os
-from fasthtml.common import fast_app, serve, Title, Main, Link
+from fasthtml.common import fast_app, serve, Title, Main, Link, Meta
 from componentes import (
     gerar_hearder,
     gerar_perguntas,
