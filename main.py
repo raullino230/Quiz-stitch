@@ -8,32 +8,29 @@ from componentes import (
     gerar_footer
 )
 
-app, route = fast_app(
+_app, route = fast_app(
     pico=False,
-    secret_key=os.environ.get(
-        "SECRET_KEY",
-        "chave-local-de-desenvolvimento"
-    ),
-    hdrs=(
-        Link(rel="stylesheet", href="/static/style.css"),
-    )
+    secret_key=os.environ.get("SECRET_KEY", "chave-local-de-desenvolvimento"),
+    hdrs=(Link(rel="stylesheet", href="/static/style.css"),)
 )
+
+app = _app
+
 
 @route("/")
 def pagina_principal():
     formulario_perguntas = gerar_perguntas()
-    tabela_de_pontuação = gerar_tabela_pontuação()
-    formulario_respostas = gerar_respostas()
+    Table_de_pontuação = gerar_tabela_pontuação()
+    Formulario_respostas = gerar_respostas()
 
-    return Title("Quiz sobre o Stitch"), Main(
-        gerar_hearder(
-            "Esse quiz foi desenvolvido especialmente para minha irmã, Livia!!!"
-        ),
+    return Title("Quiz sobre o stitch"), Main(
+        gerar_hearder("Esse quiz foi desenvolvido especialmente para minha irmã, Livia!!!"),
         formulario_perguntas,
-        tabela_de_pontuação,
-        formulario_respostas,
+        Table_de_pontuação,
+        Formulario_respostas,
         gerar_footer()
     )
+
 
 if __name__ == "__main__":
     serve()
