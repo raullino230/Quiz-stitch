@@ -1,0 +1,9 @@
+# Ambiente virtual
+venv/
+.venv/
+
+# Chave de sessão do FastHTML
+.sesskey
+
+# Cache do Python
+__pycache__/
