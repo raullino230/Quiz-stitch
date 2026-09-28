@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    background-color: #F4E1C1;
+}
+
+header {
+    background-color: #2F8FD1;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #FFF8F0;
+}
+
+header p {
+    font-size: 18px;
+    color: #FFD23F;
+}
+
+.quiz-perguntas{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pergunta h2 {
+    color: #1B5E8C;
+}
+
+.opcoes label {
+    color: #E63946;
+}
+
+.opcoes input {
+    accent-color: #6c5ce7;
+}
+
+.imagem-personagem {
+    width: 7rem;
+    border-radius: 5px;
+}
+
+.resposta-texto {
+    width: 100%;
+    padding:0.6rem;
+    border: 2px solid #2a8352;
+    outline: none;
+    border-radius: 20px;
+    background-color: #FFF8F0;
+    color: #2F8FD1;
+}
+
+input::placeholder {
+    color: #6c5ce7;
+}
+
+.tabela-pontuacao {
+    background-color: #F4E1C1;
+    border-radius: 12px;
+}
+
+.tabela-pontuacao h2 {
+    color: #1B5E8C;
+    text-align: center;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #FFD23F;
+    color: #1B5E8C;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+td {
+    color: #1B5E8C;
+    padding: 0.7rem;
+    text-align: center;
+    border-bottom: 1px solid #F4E1C1;
+}
+
+tfoot td {
+    background-color: #1B5E8C;
+    color: #FFF8F0;
+    border-bottom: none;
+}
+
+.respostas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.respostas h2 {
+    color: #1B5E8C;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.respostas-details {
+    background-color: #F4E1C1;
+    border: 2px solid #2F8FD1;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.respostas-details summary {
+    color: #1B5E8C;
+    font-weight: 700;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.respostas-details summary:hover {
+    color: #FF5A8A;
+}
+
+.lista-respostas {
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.lista-respostas li {
+    color: #6A4C93;
+    padding: 0.3rem;
+}
+
+.lista-respostas li::marker {
+    color: #FF5A8A;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1B5E8C;
+    text-align: center;
+    padding: 2rem;
+}
