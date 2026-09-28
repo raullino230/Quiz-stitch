@@ -11,11 +11,12 @@ from componentes import (
 _app, route = fast_app(
     pico=False,
     secret_key=os.environ.get("SECRET_KEY", "chave-local-de-desenvolvimento"),
-    hdrs=(Link(rel="stylesheet", href="/static/style.css"),)
+    hdrs=(Link(rel="stylesheet", href="/static/style.css"),
       Meta(
             name="google-site-verification",
             content="9eUI0pLtQ8XsvgcETjFVmWNogTGGGNT_QQtvi_J37bQ"
         )
+    )
 )
 
 app = _app
